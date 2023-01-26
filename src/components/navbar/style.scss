@@ -1,12 +1,12 @@
 .navbar {
   background-color: #dadeeb;
   padding: 0 10px;
+  border-radius: 0px 0px 20px 20px;
 
   &-firstPart {
     display: flex;
     border-radius: 0px 0px 20px 20px;
     border-bottom-width: 5px;
-    flex-grow: 1;
     background-color: #c0cbdd;
     height: 150px;
   }
