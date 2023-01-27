@@ -1,4 +1,5 @@
 import { images } from "./helper";
+import { Button } from "react-md";
 
 
 
@@ -20,7 +21,11 @@ const Navbar = () => {
         {images.map((el, i) => (
 
           <div key={i } className='navbar-divPart'>
-            {el.nameSection}
+            
+             <Button id="outlined-button-5" theme="clear" themeType="outline">
+{el.nameSection}
+      </Button>
+            
           </div>
         ))}
 
