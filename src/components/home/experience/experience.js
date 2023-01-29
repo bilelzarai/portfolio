@@ -9,7 +9,7 @@ const Experience = () => {
 
       {experience.map((el, i) => (
 
-        <div className='' >
+        <div className='card' >
 
           <Card key={i}>
             <CardHeader>
