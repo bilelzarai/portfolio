@@ -6,17 +6,28 @@ import ProfessionalCompetence from './professionalcompetence/professionalcompete
 import Projects from './projects/projects.js';
 import './style.scss';
 import TechnicalCompetence from './technicalcompetence/technicalcompetance';
+import cv from '../../assets/Zarai_Bilel_CV_JS.pdf';
 
+const downloadFile = () => {
+  window.location.target= '_blank';
+
+  window.open( cv, "_blank")
+}
 const Home = () => {
   return (
     <div>
       <div className='home'>
+        <div className='home-cvBtn'>
+          <Button  id="contained-button-5" theme="clear" themeType="contained"   onClick={downloadFile} >
+            View My CV
+          </Button>
+          <a href={cv} download="MY CV" target='_blank' rel="noreferrer" >
+          <Button id="contained-button-5" theme="clear" themeType="contained"  >
+              Download CV
+            </Button>
+            
+          </a>
 
-        <div className='home-cvBtn'> 
-        
-        <Button  id="contained-button-5" theme="clear" themeType="contained">
-        Download CV
-      </Button>
         </div>
         <div>
           <div className='leftSideBody'>
@@ -40,8 +51,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='technicalCompetence'> <TechnicalCompetence/></div>
-      <div className='professionalCompetence'><ProfessionalCompetence/></div>
+      <div className='technicalCompetence'> <TechnicalCompetence /></div>
+      <div className='professionalCompetence'><ProfessionalCompetence /></div>
     </div>
   )
 }
