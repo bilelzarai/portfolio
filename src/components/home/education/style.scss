@@ -1,0 +1,17 @@
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  // background-color: black;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  .card {
+    // background-color: black;
+    // padding: 10px 0;
+    margin: 10px 0;
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
