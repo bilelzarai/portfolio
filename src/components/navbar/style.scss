@@ -15,8 +15,9 @@
     // border: 1px solid;
     height: 100%;
     width: 100%;
+
+    align-items: flex-end;
     justify-content: center;
-    align-items: end;
   }
   &-secondPart {
     display: flex;
