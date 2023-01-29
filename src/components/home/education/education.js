@@ -1,7 +1,11 @@
 import './style.scss';
 
 const Education  = () => {
-  return (<></>)
+  return (<>
+  
+  
+  
+  </>)
 }
 
 export default Education;
