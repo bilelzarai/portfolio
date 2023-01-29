@@ -1,17 +1,23 @@
+import { Button } from 'react-md';
 import Certification from './certification/certification';
 import Education from './education/education';
 import Experience from './experience/experience';
 import ProfessionalCompetence from './professionalcompetence/professionalcompetence';
-import Projects from './projects/projects';
+import Projects from './projects/projects.js';
 import './style.scss';
 import TechnicalCompetence from './technicalcompetence/technicalcompetance';
 
 const Home = () => {
   return (
     <div>
-      <div className='body'>
+      <div className='home'>
 
-        <div className='cv'> </div>
+        <div className='home-cvBtn'> 
+        
+        <Button  id="contained-button-5" theme="clear" themeType="contained">
+        Download CV
+      </Button>
+        </div>
         <div>
           <div className='leftSideBody'>
             <div className='experience'>

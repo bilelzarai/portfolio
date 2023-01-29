@@ -20,12 +20,12 @@ const Navbar = () => {
       <div className="navbar-secondPart">
         {images.map((el, i) => (
 
-          <div key={i } className='navbar-divPart'>
-            
-             <Button id="outlined-button-5" theme="clear" themeType="outline">
-{el.nameSection}
-      </Button>
-            
+          <div key={i} className='navbar-divPart'>
+
+            <Button id="outlined-button-5" theme="clear" themeType="outline">
+              {el.nameSection}
+            </Button>
+
           </div>
         ))}
 

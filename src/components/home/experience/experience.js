@@ -1,61 +1,92 @@
-// import { images } from "./helper";
-// import { Button } from "react-md";
-
-
-
+import { Button, Card, CardActions, CardContent, CardHeader, CardTitle } from 'react-md';
 import './style.scss';
+import { experience } from "./helper";
 
-const Experience = (experience) => {
+const Experience = () => {
   return (
     <div className='experience'>
-    <div className='poste'> {experience.poste}</div>
 
-    <div className='duration'> <div className='duree'> {experience.dateDebut} - {experience.dateSortie}</div> <div className='societe'>{experience.societe}</div></div>
 
-    <div>
-      <div>
-        {experience?.taches?.map((el, i) => (
-          <>
-            <div key={i} className='tache' >
+      {experience.map((el, i) => (
 
+        <div className='' >
+
+          <Card key={i}>
+            <CardHeader>
+
+              <CardTitle className='poste'>{el.poste}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className='duration'> <div className='duree'> {el.dateDebut} - {el.dateSortie}</div> <div className='societe'>{el.societe}</div></div>
               <div className='tache-icon'> {el.icon} </div>
-              <div className='tache-descriptionTache'> {el.tache}    </div>
-              
-            </div>
-          </>
+              <div key={i} className='tache' >
 
-        )
+              {el?.taches?.map((t, numb) => (
+                <div key={numb} className='tache-descriptionTache'> {t.tache}  </div>
 
 
-        )}
-        {experience.poste}
+              ))}
+              </div>
 
-      </div>
+            </CardContent>
+            <CardActions>
+              <Button className='button'>Action 1</Button>
+            </CardActions>
+          </Card>
+
+
+        </div>
+
+      )
+      )
+
+      }
+ 
 
     </div>
+  )
+}
+export default Experience;
 
-  </div>
-    )
+experience.defaultProps = {
+  elements: [{
+    id: 1,
+    poste: 'ing info',
+    dateDebut: '2019',
+    dateSortie: '2020',
+    nameSociete: 'anime',
+
+    taches: [{
+      id: 1,
+      icon: '',
+      tache: 'cree script',
+    },
+    {
+      id: 2,
+      icon: '',
+      tache: 'animation'
+    }]
+
+  },
+  {
+    id: 2,
+    poste: 'ing info',
+    dateDebut: '2019',
+    dateSortie: '2020',
+    nameSociete: 'anime',
+
+    taches: [{
+      id: 1,
+      icon: '',
+      tache: 'cree script',
+    },
+    {
+      id: 2,
+      icon: '',
+      tache: 'animation'
+    }]
   }
-  export default Experience;
-  Experience.defaultProps = {
-    experience: {
-      poste: 'ing info',
-      dateDebut: '2019',
-      dateSortie: '2020',
-      nameSociete: 'anime',
-  
-      taches: [{
-        id: 1,
-        icon:'',
-        tache: 'cree script',
-      },
-      {
-        id: 2,
-        icon:'',
-        tache: 'animation'
-      }]
-  
-    }
-  
-  }
+
+  ]
+
+}
