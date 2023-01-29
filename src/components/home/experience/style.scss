@@ -1,4 +1,11 @@
 .experience {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 0;
+
   .poste {
     background-color: #fff;
   }
