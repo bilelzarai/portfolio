@@ -15,8 +15,8 @@ const downloadFile = () => {
 }
 const Home = () => {
   return (
-    <div>
-      <div className='home'>
+    <div className='home'>
+      <div >
         <div className='home-cvBtn'>
           <Button  id="contained-button-5" theme="clear" themeType="contained"   onClick={downloadFile} >
             View My CV
@@ -29,19 +29,19 @@ const Home = () => {
           </a>
 
         </div>
-        <div>
+        <div className='ft'>
           <div className='leftSideBody'>
             <div className='experience'>
               <Experience />
 
             </div>
             <div className='education'>
-              <Education />
+             <Certification />
             </div>
           </div>
           <div className='rightSideBody'>
             <div className='certification'>
-              <Certification />
+               <Education />
             </div>
             <div className='project'>
               <Projects />

@@ -1,11 +1,24 @@
 .home {
-  height: 200px;
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  .ft {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   &-cvBtn {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
     margin: 10px 0;
+  }
+  .leftSideBody {
+    background-color: aqua;
+  }
+  .rightSideBody {
+    background-color: bisque;
   }
 }
