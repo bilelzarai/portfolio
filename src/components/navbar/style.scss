@@ -5,6 +5,8 @@
 
   &-firstPart {
     display: flex;
+    flex-wrap: wrap;
+
     border-radius: 0px 0px 20px 20px;
     border-bottom-width: 5px;
     background-color: #c0cbdd;

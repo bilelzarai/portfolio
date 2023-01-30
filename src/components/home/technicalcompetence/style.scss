@@ -1,0 +1,21 @@
+.divix {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  &-tech {
+    // background-color: aqua;
+    display: flex;
+    // align-items: center;
+    justify-content: flex-end;
+  }
+  .motCle {
+    display: flex;
+    // border: 1px solid;
+    // height: 100%;
+    // width: 100%;
+    padding: 10px;
+  }
+}

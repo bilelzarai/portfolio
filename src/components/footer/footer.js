@@ -1,5 +1,7 @@
 // import { images } from "./helper";
 import { Button } from "react-md";
+import ProfessionalCompetence from "../home/professionalcompetence/professionalcompetence";
+import TechnicalCompetence from "../home/technicalcompetence/technicalcompetance";
 
 
 
@@ -9,8 +11,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="">
-          <div className=' '>
-          </div>
+      <div className='technicalCompetence'> <TechnicalCompetence /></div>
+      <div className='professionalCompetence'><ProfessionalCompetence /></div> 
 
       </div>
 
