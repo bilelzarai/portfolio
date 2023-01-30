@@ -1,5 +1,5 @@
 import { Avatar, Card, CardHeader, CardSubtitle, CardTitle, EmailSVGIcon, List, ListItem, MediaContainer, PhoneSVGIcon } from 'react-md';
-import education from './helper'
+import {education} from './helper'
 
 import './style.scss';
 

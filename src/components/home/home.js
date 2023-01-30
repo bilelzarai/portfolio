@@ -2,10 +2,10 @@ import { Button } from 'react-md';
 import Certification from './certification/certification';
 import Education from './education/education';
 import Experience from './experience/experience';
-import ProfessionalCompetence from './professionalcompetence/professionalcompetence';
+// import ProfessionalCompetence from './professionalcompetence/professionalcompetence';
 import Projects from './projects/projects.js';
 import './style.scss';
-import TechnicalCompetence from './technicalcompetence/technicalcompetance';
+// import TechnicalCompetence from './technicalcompetence/technicalcompetance';
 import cv from '../../assets/Zarai_Bilel_CV_JS.pdf';
 
 const downloadFile = () => {
@@ -14,7 +14,7 @@ const downloadFile = () => {
   window.open( cv, "_blank")
 }
 const Home = () => {
-  return (
+  return (<>
     <div className='home'>
       <div >
         <div className='home-cvBtn'>
@@ -51,9 +51,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='technicalCompetence'> <TechnicalCompetence /></div>
-      <div className='professionalCompetence'><ProfessionalCompetence /></div>
+      
     </div>
-  )
+   
+  </>)
 }
 export default Home;

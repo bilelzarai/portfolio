@@ -1,4 +1,4 @@
-export const education = [
+  export const education = [
   {
     id :1,
     imgSchool: 'https://media.gettyimages.com/id/159604238/photo/tunisian-students-arrive-at-the-manouba-university-on-january-17-2013-outside-tunis-the-dean.jpg?s=612x612&w=gi&k=20&c=-pYUi-mHNA4Zp8GdbWWdEo-0AUNGYNBp9ERRYFGl2uc=',
@@ -31,4 +31,3 @@ export const education = [
 
 
 ]
-export default education;
