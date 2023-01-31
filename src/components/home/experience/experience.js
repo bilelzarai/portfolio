@@ -4,10 +4,12 @@ import { experience } from "./helper";
 
 const Experience = () => {
   return (
-    <div className='experience'>
+    <div>
+      <div className='titleExp'> Experience </div>
 
 
-      {experience.map((el, i) => (
+      <div className='experience'>
+       {experience.map((el, i) => (
 
         <div className='card' >
 
@@ -44,11 +46,12 @@ const Experience = () => {
  
 
     </div>
+    </div>
   )
 }
 export default Experience;
 
-experience.defaultProps = {
+experience.defaultProps = { 
   elements: [{
     id: 1,
     poste: 'ing info',

@@ -7,6 +7,7 @@ import Projects from './projects/projects.js';
 import './style.scss';
 // import TechnicalCompetence from './technicalcompetence/technicalcompetance';
 import cv from '../../assets/Zarai_Bilel_CV_JS.pdf';
+import Competence from './competence/competence';
 
 const downloadFile = () => {
   window.location.target= '_blank';
@@ -51,7 +52,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+      <div>
+        <Competence/>
+      </div>
     </div>
    
   </>)
