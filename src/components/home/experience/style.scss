@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-
+  .titleExp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
   .card {
     display: flex;
     flex-wrap: wrap;

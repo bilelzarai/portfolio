@@ -1,10 +1,14 @@
-import { Avatar, Card, CardHeader, CardSubtitle, CardTitle, EmailSVGIcon, List, ListItem, MediaContainer, PhoneSVGIcon } from 'react-md';
+import { Avatar, Card, CardHeader, CardSubtitle, CardTitle, DateRangeSVGIcon, DescriptionSVGIcon, EmailSVGIcon, List, ListItem, MediaContainer, PhoneSVGIcon } from 'react-md';
 import {education} from './helper'
 
 import './style.scss';
 
 const Education  = () => {
-  return (< div className='education'>
+  return (
+    <div>
+    <div className='titleEduc'> Education </div>
+ 
+  < div className='education'>
 {education.map((el,i)=>(
       <Card key={i} className='card'>
         <MediaContainer fullWidth>
@@ -23,16 +27,18 @@ const Education  = () => {
          
         </CardHeader>
         <List>
-            <ListItem leftAddon={<PhoneSVGIcon />} secondaryText="Mobile">
+            <ListItem leftAddon={<DateRangeSVGIcon />}>
              {el.dateDebut} - {el.dateFin}
             </ListItem>
-            <ListItem leftAddon={<EmailSVGIcon />} secondaryText="Work">
+            <ListItem leftAddon={<DescriptionSVGIcon />}>
               {el.description}
             </ListItem>
           </List>
       </Card>
   ))}
-  </div>)
+  </div>  
+  </div>
+  )
 }
 
 export default Education;
