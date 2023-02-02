@@ -1,20 +1,21 @@
-import { Button, Card, CardActions, CardContent, CardHeader, CardTitle } from 'react-md';
+// import { Button, Card, CardActions, CardContent, CardHeader, CardTitle } from 'react-md';
 import './style.scss';
 import { experience } from "./helper";
+import { Card } from 'react-md';
 
 const Experience = () => {
   return (
     <div>
-      <div className='titleExp'> Experience </div>
+      <div className='bodyExperience-titleExp'> Experience </div>
 
 
-      <div className='experience'>
+      <div className='bodyExperience' md-block-centered>
        {experience.map((el, i) => (
 
         <div className='card' >
 
           <Card key={i}>
-            <CardHeader>
+            {/* <CardHeader>
 
               <CardTitle className='poste'>{el.poste}</CardTitle>
             </CardHeader>
@@ -33,7 +34,7 @@ const Experience = () => {
             </CardContent>
             <CardActions>
               <Button className='button'>Action 1</Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
 
 
@@ -51,45 +52,3 @@ const Experience = () => {
 }
 export default Experience;
 
-experience.defaultProps = { 
-  elements: [{
-    id: 1,
-    poste: 'ing info',
-    dateDebut: '2019',
-    dateSortie: '2020',
-    nameSociete: 'anime',
-
-    taches: [{
-      id: 1,
-      icon: '',
-      tache: 'cree script',
-    },
-    {
-      id: 2,
-      icon: '',
-      tache: 'animation'
-    }]
-
-  },
-  {
-    id: 2,
-    poste: 'ing info',
-    dateDebut: '2019',
-    dateSortie: '2020',
-    nameSociete: 'anime',
-
-    taches: [{
-      id: 1,
-      icon: '',
-      tache: 'cree script',
-    },
-    {
-      id: 2,
-      icon: '',
-      tache: 'animation'
-    }]
-  }
-
-  ]
-
-}

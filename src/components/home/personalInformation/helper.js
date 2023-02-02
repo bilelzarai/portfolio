@@ -1,4 +1,4 @@
-export const images = [
+export const information = [
   {
     id:"1",
     img :"",

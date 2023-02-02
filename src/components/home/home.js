@@ -8,6 +8,7 @@ import './style.scss';
 // import TechnicalCompetence from './technicalcompetence/technicalcompetance';
 import cv from '../../assets/Zarai_Bilel_CV_JS.pdf';
 import Competence from './competence/competence';
+import PersonalInformation from './personalInformation/personalInformation';
 
 const downloadFile = () => {
   window.location.target= '_blank';
@@ -18,6 +19,7 @@ const Home = () => {
   return (<>
     <div className='home'>
       <div >
+        <div><PersonalInformation/></div>
         <div className='home-cvBtn'>
           <Button  id="contained-button-5" theme="clear" themeType="contained"   onClick={downloadFile} >
             View My CV
@@ -32,19 +34,19 @@ const Home = () => {
         </div>
         <div className='ft'>
           <div className='leftSideBody'>
-            <div className='experience'>
+            <div className='experienceHome'>
               <Experience />
 
             </div>
-            <div className='education'>
+            <div className='certificationHome'>
              <Certification />
             </div>
           </div>
           <div className='rightSideBody'>
-            <div className='certification'>
+            <div className='educationHome'>
                <Education />
             </div>
-            <div className='project'>
+            <div className='projectHome'>
               <Projects />
             </div>
 
@@ -52,7 +54,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='competence'>
         <Competence/>
       </div>
     </div>
