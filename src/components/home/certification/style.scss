@@ -1,0 +1,43 @@
+.bodyCertification {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  border-radius: 0px 20px 20px 0;
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
+  margin: 20px 0 0 20px;
+
+  &-titleCertif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  .poste {
+    background-color: #fff;
+  }
+  &-duration {
+    background-color: #fff;
+  }
+  .duree {
+    background-color: #fff;
+  }
+  .societe {
+    background-color: #fff;
+  }
+  .tache {
+    &-icon {
+      background-color: #fff;
+    }
+    &-descriptionTache {
+      background-color: #fff;
+    }
+  }
+}

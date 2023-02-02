@@ -1,8 +1,59 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: main;
+}
+.item3 {
+  grid-area: right;
+}
+.item4 {
+  grid-area: aaaa;
+}
+.item5 {
+  grid-area: zzzzz;
+}
+.item6 {
+  grid-area: footer;
+}
+.item7 {
+  grid-area: downloadCv;
+}
+.item8 {
+  grid-area: viewCv;
+}
+.item9 {
+  grid-area: competence;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header "
+    " viewCv downloadCv "
+    "main right "
+    "aaaa zzzzz "
+    "competence competence "
+    "footer  footer";
+  // grid-gap: 10px;
+  // background-color: #2196f3;
+  // padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  // text-align: center;
+  // padding: 20px 0;
+  font-size: 20px;
+}
 .home {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  background-color: aqua;
+  // padding: 20px 0;
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+  // justify-content: space-evenly;
   .ft {
     display: flex;
     // align-items: flex-start;
@@ -14,24 +65,54 @@
     justify-content: space-evenly;
     margin: 10px 0;
   }
-  .leftSideBody {
+  .experienceHome {
+    // background-color: rgb(147, 38, 38);
     border-radius: 0px 20px 20px 0;
     border-style: solid;
     border-width: 1px 1px 1px 0px;
-    margin-right: 10px;
-    padding: 20px 20px 0 0;
+    margin: 20px 0 20px 0;
+
+    // padding: 20px;
+  }
+  .certificationHome {
+    // background-color: rgb(147, 38, 38);
+    border-radius: 0px 20px 20px 0;
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+    margin: 20px 0 20px 0;
+  }
+  .educationHome {
+    // background-color: rgb(147, 38, 38);
+
+    border-radius: 20px 0px 0 20px;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px;
+    margin: 20px 0 20px 0;
+  }
+  .projectHome {
+    // background-color: rgb(147, 38, 38);
+    border-radius: 20px 0px 0 20px;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px;
+  }
+  .competenceHome {
+    margin: 0 10px 0 10px;
+  }
+  .leftSideBody {
+    // margin-right: 10px;
+    // padding: 20px 20px 0 10px;
     // border-bottom-width: 5px;
     // background-color: aqua;
   }
   .rightSideBody {
-    border-radius: 20px 0px 0px 20px;
-    border-bottom-width: 5px;
+    // border-radius: 20px 0px 0px 20px;
+    // border-bottom-width: 5px;
 
     // background-color: bisque;
-    border-style: solid;
-    border-width: 1px 0px 1px 1px;
-    margin-left: 10px;
-    padding: 20px 0 0 20px;
+    // border-style: solid;
+    // border-width: 1px 0px 1px 1px;
+    // margin-left: 10px;
+    // padding: 20px 0 0 20px;
   }
 }
 

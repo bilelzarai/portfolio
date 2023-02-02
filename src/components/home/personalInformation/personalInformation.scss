@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #dadeeb;
+  padding: 0 10px;
+  border-radius: 0px 0px 20px 20px;
+
+  &-firstPart {
+    display: flex;
+
+    border-radius: 0px 0px 20px 20px;
+    border-bottom-width: 5px;
+    background-color: #c0cbdd;
+    height: 150px;
+  }
+  &-divPart {
+    display: flex;
+    // border: 1px solid;
+    height: 100%;
+    width: 100%;
+
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &-secondPart {
+    display: flex;
+    padding: 2px;
+    // justify-content: center;
+    // // align-items: center;
+    height: 50px;
+  }
+}

@@ -1,9 +1,15 @@
-.experience {
+.bodyExperience {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  .titleExp {
+
+  border-radius: 0px 20px 20px 0;
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
+  margin: 20px 0 0 20px;
+
+  &-titleExp {
     display: flex;
     align-items: center;
     justify-content: center;

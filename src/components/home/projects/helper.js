@@ -1,4 +1,4 @@
-export const experience = [
+export const projects = [
  
   {
     id: 5,

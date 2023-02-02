@@ -1,11 +1,20 @@
 .education {
   display: flex;
   flex-wrap: wrap;
-  // background-color: black;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 10px 0;
+  border-radius: 20px 0px 0 20px;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  margin: 20px 0 0 20px;
 
+  &-titleEduc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
   .card {
     // display: flex;
 
