@@ -1,6 +1,7 @@
 import { Card } from 'react-md';
 import { experience } from '../experience/helper';
-import './style.scss';
+
+import './certification.scss';
 
 const Certification  = () => {
   return (

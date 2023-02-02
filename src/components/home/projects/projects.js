@@ -1,7 +1,7 @@
 import { Card } from 'react-md';
 import {projects} from './helper'
 
-import './style.scss';
+import './projects.scss';
 
 const Projects  = () => {
   return (

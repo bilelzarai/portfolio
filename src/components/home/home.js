@@ -4,11 +4,14 @@ import Education from './education/education';
 import Experience from './experience/experience';
 // import ProfessionalCompetence from './professionalcompetence/professionalcompetence';
 import Projects from './projects/projects.js';
-import './style.scss';
 // import TechnicalCompetence from './technicalcompetence/technicalcompetance';
 import cv from '../../assets/Zarai_Bilel_CV_JS.pdf';
 import Competence from './competence/competence';
 import PersonalInformation from './personalInformation/personalInformation';
+
+
+import './home.scss';
+
 
 const downloadFile = () => {
   window.location.target= '_blank';

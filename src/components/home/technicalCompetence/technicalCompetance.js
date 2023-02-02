@@ -1,4 +1,4 @@
-import './style.scss';
+import './technicalCompetance.scss';
 
 import { techComp } from './helper'
 import { Button } from 'react-md';

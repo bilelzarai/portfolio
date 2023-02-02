@@ -1,7 +1,8 @@
 // import { Button, Card, CardActions, CardContent, CardHeader, CardTitle } from 'react-md';
-import './style.scss';
 import { experience } from "./helper";
 import { Card } from 'react-md';
+
+import './experience.scss';
 
 const Experience = () => {
   return (

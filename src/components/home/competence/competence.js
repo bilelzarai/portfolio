@@ -5,7 +5,7 @@ import TechnicalCompetence from "../technicalCompetence/technicalCompetance";
 
 
 
-import './style.scss';
+import './competence.scss';
 
 const Competence = () => {
   return (

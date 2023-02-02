@@ -2,7 +2,7 @@
 import { Card } from 'react-md';
 import {education} from './helper'
 
-import './style.scss';
+import './education.scss';
 
 const Education  = () => {
   return (

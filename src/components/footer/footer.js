@@ -2,7 +2,7 @@ import { Button } from "react-md";
 
 
 
-import './style.scss';
+import './footer.scss';
 
 const Footer = () => {
   return (

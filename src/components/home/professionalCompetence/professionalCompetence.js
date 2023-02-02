@@ -1,6 +1,6 @@
 import { Button } from 'react-md';
 import { profComp } from './helper'
-import './style.scss';
+import './professionalCompetence.scss';
 
 const ProfessionalCompetence = () => {
   return (
