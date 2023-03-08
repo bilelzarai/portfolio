@@ -1,16 +1,15 @@
 import './style.scss';
-
-import { techComp } from './helper'
 import { Button } from 'react-md';
 
-const TechnicalCompetence = () => {
+const TechnicalCompetence = (props) => {
   return (
   <div className='divix'>
-    Technical Competence : 
+   {props.title}:  
   <div className='divix-tech'>
-    {techComp.map((el, i) => (
+
+    {props.table.map((el, i) => (
       <div key={i} className ='motCle'>
-          <Button id="outlined-button-5" theme="clear" themeType="outline">
+          <Button  id="outlined-button-5" theme="clear" themeType="outline">
           {el.motCle}
             </Button>
        
@@ -21,6 +20,6 @@ const TechnicalCompetence = () => {
   
   </div>
   )
-}
+} 
 
 export default TechnicalCompetence;

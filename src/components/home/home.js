@@ -1,4 +1,5 @@
 import { Button } from 'react-md';
+
 import Certification from './certification/certification';
 import Education from './education/education';
 import Experience from './experience/experience';
@@ -9,12 +10,19 @@ import './style.scss';
 import cv from '../../assets/Zarai_Bilel_CV_JS.pdf';
 import Competence from './competence/competence';
 import PersonalInformation from './personalInformation/personalInformation';
+// import { techComp } from './technicalCompetence/helper'
+// import { profComp } from './professionalcompetence/helper'
+
+
+import { useState } from 'react';
+
 
 const downloadFile = () => {
   window.location.target= '_blank';
 
   window.open( cv, "_blank")
 }
+
 const Home = () => {
   return (<>
     <div className='home'>

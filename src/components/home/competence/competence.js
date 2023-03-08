@@ -1,22 +1,21 @@
-// import { images } from "./helper";
-// import { Button } from "react-md";
-import ProfessionalCompetence from "../professionalCompetence/professionalCompetence";
 import TechnicalCompetence from "../technicalCompetence/technicalCompetance";
 
-
-
+import { techComp, profComp } from '../technicalCompetence/helper';
 import './style.scss';
 
 const Competence = () => {
+
   return (
     <div className="competence">
       <div className="">
-      <div className='technicalCompetence'> <TechnicalCompetence /></div>
-      <div className='professionalCompetence'><ProfessionalCompetence /></div> 
+        <div className='technicalCompetence'>
+          <TechnicalCompetence title="Technical Competence " table={techComp} />
+        </div>
 
+        <div className='technicalCompetence'>
+          <TechnicalCompetence title="Professional Competence " table={profComp} />
+        </div>
       </div>
-
-  
     </div>
   )
 }
