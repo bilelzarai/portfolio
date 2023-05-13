@@ -6,7 +6,11 @@ import './style.scss';
 
 const Navbar = () => {
   return (
-    <></>
+    <>
+    
+    test
+    
+    </>
     // <div className="navbar">
     //   <div className="navbar-firstPart">
     //     {images.map((el, i) => (
@@ -31,7 +35,7 @@ const Navbar = () => {
 
     //   </div>
 
-    //   {/* <div  >
+    //    <div  >
     //     {images.map((el, i) => (
     //       <div key={i} className="navbar-firstPart">
            
@@ -50,7 +54,7 @@ const Navbar = () => {
 
     //     ))}
 
-    //   </div> */}
+    //   </div> 
 
     // </div>
   )

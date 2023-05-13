@@ -1,8 +1,29 @@
-.App {
-  text-align: left;
+@use "react-md" as *;
+@include react-md-utils;
+
+.app {
+  // text-align: left;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: #e9ecf6;
   padding: 0 10px;
   overflow-x: hidden;
+  height: 100vh;
+
+  &-navbar {
+    background-color: aqua;
+  }
+
+  &-sign {
+
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+  }
 }
 
 // .App-logo {
